@@ -15,10 +15,10 @@ class Question(db.Model):
 	difficulty = db.Column(db.Float)
 
 	def __repr__(self):
-		"""Provides helpful representation when printed."""
+		"""Provides helpful representation when printed of question id."""
 
-		return "<Question question_id={}, strand_name={}, standard_name={}, difficulty={}".format(self.question_id, self.strand_name, self.standard_name, self.difficulty)
-
+		# return "<Question question_id={}, strand_name={}, standard_name={}, difficulty={}".format(self.question_id, self.strand_name, self.standard_name, self.difficulty)
+		return '{}'.format(self.question_id)
 
 def connect_to_db(app):
 	"""Connect the database to our Flask app."""
