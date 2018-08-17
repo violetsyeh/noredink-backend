@@ -37,4 +37,5 @@ if __name__ == "__main__":
     connect_to_db(app)
 
     distribute_questions()
+    #do not need to run server on localhost for this assignment
     # app.run(port=5000, host='0.0.0.0')
